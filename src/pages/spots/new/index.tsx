@@ -62,6 +62,7 @@ export default function NewSpot({ features }: NewSpotProps) {
                 <input
                     {...register('longitude')}
                     type="number"
+                    step="0.0000000000000001"
                     id="longitude"
                     name="longitude"
                     placeholder="LONGITUDE"
@@ -74,6 +75,7 @@ export default function NewSpot({ features }: NewSpotProps) {
                 <input
                     {...register('latitude')}
                     type="number"
+                    step="0.0000000000000001"
                     id="latitude"
                     name="latitude"
                     placeholder="LATITUDE"

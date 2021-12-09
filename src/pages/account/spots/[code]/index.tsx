@@ -82,6 +82,7 @@ export default function UpdateSpot({ spot, features }: UpdateSpotProps) {
                 <input
                     {...register('longitude')}
                     type="number"
+                    step="0.0000000000000001"
                     id="longitude"
                     name="longitude"
                     placeholder="LONGITUDE"
@@ -94,6 +95,7 @@ export default function UpdateSpot({ spot, features }: UpdateSpotProps) {
                 <input
                     {...register('latitude')}
                     type="number"
+                    step="0.0000000000000001"
                     id="latitude"
                     name="latitude"
                     placeholder="LATITUDE"
