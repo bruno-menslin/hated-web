@@ -41,6 +41,17 @@ export default function UpdateSpot({ spot, features }: UpdateSpotProps) {
             })
     }
 
+    async function handleDelete() {
+        await api.delete(`spots/${spot.code}`)
+            .then(response => {
+                Router.push('/account/spots')
+            })
+            .catch(error => {
+                console.log(error)
+                alert(error.response.data.error)
+            })
+    }
+
     useEffect(() => {
         setValue('image', spot.image)
         setValue('address', spot.address)
@@ -121,6 +132,7 @@ export default function UpdateSpot({ spot, features }: UpdateSpotProps) {
 
                 <div className="actions">
                     <button type="submit">Update</button>
+                    <a onClick={handleDelete}>Delete</a>
                 </div>
             </form>
         </div>
