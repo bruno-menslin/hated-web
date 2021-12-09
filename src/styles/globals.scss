@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --white: #FFF;
+    --black: #080808;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--white);
+    background: var(--black);
+    font-family: 'Cormorant Unicase', Courier, monospace;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.3rem;
+}
+
+button {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+//FORM
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    input, button, select {
+        color: var(--white);
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Cormorant Unicase', Courier, monospace;
+
+        background: var(--black);
+        border: none !important;
+        outline: none !important;
+    }
+    
+    label {
+        display: none;
+    }
+    
+    input {
+        font-size: 1rem;
+        color: #949494;
+        text-transform: none;
+        font-family: 'Courier Prime', Courier, monospace;
+        width: 100%;
+    }
+
+    input[type=number] {
+        margin-right: -15px;
+    }
+    
+    select {
+        font-size: 1rem;
+        color: #949494;
+        border: 1px solid #484848 !important;
+    
+        option {
+            padding: .5rem 1rem;
+        };
+    }
+
+    .actions {
+        margin-top: 2rem;
+    }
+}
+
+
+//RESPONSIVE
+@media (max-width: 1080px) {
+    html {
+        font-size: 93.75%;
+    }
+}
+
+@media (max-width: 720px) {
+    html {
+        font-size: 87.5%;
+    }
+}
+
+
+//SCROLLBAR
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+select::-webkit-scrollbar {
+    display: none;
+}
+
+select {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+//PLACEHOLDER
+::placeholder {
+    color: #484848;
+    opacity: 1;
+}
+  
+:-ms-input-placeholder {
+    color: #484848;
+}
+  
+::-ms-input-placeholder {
+    color: #484848;
+}
