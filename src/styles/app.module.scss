@@ -1,0 +1,9 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+
+    main {
+        flex: .9;
+        max-width: 1500px;
+    }
+}
