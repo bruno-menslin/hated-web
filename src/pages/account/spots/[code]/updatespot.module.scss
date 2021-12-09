@@ -1,0 +1,11 @@
+.updateSpot {
+    //vertical align form
+    height: calc(100vh - 7rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    form {
+        margin-top: -7rem;
+    };
+}
