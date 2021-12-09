@@ -30,6 +30,7 @@ export default function SignIn() {
                     name="email"
                     placeholder="EMAIL"
                     required
+                    autoComplete="off"
                 />
 
                 <label htmlFor="password">

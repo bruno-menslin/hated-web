@@ -73,6 +73,7 @@ export default function UpdateSpot({ spot, features }: UpdateSpotProps) {
                     name="image"
                     placeholder="IMAGE"
                     required
+                    autoComplete="off"
                 />
 
                 <label htmlFor="address">
@@ -85,6 +86,7 @@ export default function UpdateSpot({ spot, features }: UpdateSpotProps) {
                     name="address"
                     placeholder="ADDRESS"
                     required
+                    autoComplete="off"
                 />
 
                 <label htmlFor="longitude">
@@ -98,6 +100,7 @@ export default function UpdateSpot({ spot, features }: UpdateSpotProps) {
                     name="longitude"
                     placeholder="LONGITUDE"
                     required
+                    autoComplete="off"
                 />
 
                 <label htmlFor="latitude">
@@ -111,6 +114,7 @@ export default function UpdateSpot({ spot, features }: UpdateSpotProps) {
                     name="latitude"
                     placeholder="LATITUDE"
                     required
+                    autoComplete="off"
                 />
 
                 <label htmlFor="features">

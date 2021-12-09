@@ -42,6 +42,7 @@ export default function NewSpot({ features }: NewSpotProps) {
                     name="image"
                     placeholder="IMAGE"
                     required
+                    autoComplete="off"
                 />
 
                 <label htmlFor="address">
@@ -54,6 +55,7 @@ export default function NewSpot({ features }: NewSpotProps) {
                     name="address"
                     placeholder="ADDRESS"
                     required
+                    autoComplete="off"
                 />
 
                 <label htmlFor="longitude">
@@ -67,6 +69,7 @@ export default function NewSpot({ features }: NewSpotProps) {
                     name="longitude"
                     placeholder="LONGITUDE"
                     required
+                    autoComplete="off"
                 />
 
                 <label htmlFor="latitude">
@@ -80,6 +83,7 @@ export default function NewSpot({ features }: NewSpotProps) {
                     name="latitude"
                     placeholder="LATITUDE"
                     required
+                    autoComplete="off"
                 />
 
                 <label htmlFor="features">

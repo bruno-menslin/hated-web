@@ -35,6 +35,7 @@ export default function SignUp() {
                     name="email"
                     placeholder="EMAIL"
                     required
+                    autoComplete="off"
                 />
 
                 <label htmlFor="username">
@@ -47,6 +48,7 @@ export default function SignUp() {
                     name="username"
                     placeholder="USERNAME"
                     required
+                    autoComplete="off"
                 />
 
                 <label htmlFor="password">

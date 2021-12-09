@@ -55,6 +55,7 @@ export default function AccountUpdate({ user }: UpdateProps) {
                     name="email"
                     placeholder="EMAIL"
                     required
+                    autoComplete="off"
                 />
 
                 <label htmlFor="username">
@@ -67,6 +68,7 @@ export default function AccountUpdate({ user }: UpdateProps) {
                     name="username"
                     placeholder="USERNAME"
                     required
+                    autoComplete="off"
                 />
 
                 <label htmlFor="password">
